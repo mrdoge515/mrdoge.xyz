@@ -1,0 +1,66 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+
+#mainText{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 250px;
+
+}
+
+#subText{
+    position:sticky;
+    font-size: 23px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:rgb(90, 90, 90);
+}
+
+#credits {
+    font-size: 13px;
+}
+
+#credits:hover, #spacer1:hover, #spacer2:hover, #spacer3:hover, #spacer4:hover {
+    color: white;
+}
+
+#subText.fade {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

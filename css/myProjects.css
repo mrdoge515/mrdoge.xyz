@@ -1,0 +1,134 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    margin: 0 auto;
+}
+
+#mainText{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+img{
+    visibility: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    left:50px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#projects {
+    width:100%;
+    text-align:center;
+    width: 700px;
+    height: 230px;
+    margin: auto;
+    
+}
+
+#project1 {
+    border-radius: 10px;
+    visibility: hidden;
+    float:left;
+    width: 200px;
+    height:230px;
+    background-color: rgb(5, 5, 5);
+}
+
+#project1.visible {
+    visibility: visible;
+}
+
+#pProject1.visible {
+    visibility: visible;
+}
+
+#project2 {
+    border-radius: 10px;
+    visibility: hidden;
+    display: inline-block;
+    margin:0 auto;
+    width: 200px;
+    height:230px;
+    background-color: rgb(5, 5, 5);
+}
+
+#project2.visible {
+    visibility: visible;
+}
+
+#pProject2.visible {
+    visibility: visible;
+}
+
+#project3 {
+    border-radius: 10px;
+    visibility: hidden;
+    float:right;
+    width: 200px;
+    height:230px;
+    background-color: rgb(5, 5, 5);
+}
+
+#project3.visible {
+    visibility: visible;
+}
+
+#pProject3.visible {
+    visibility: visible;
+}
+
+#project1.fade, #aProject1.fade, #pProject1.fade, #project2.fade, #aProject2.fade, #pProject2.fade, #project3.fade, #aProject3.fade, #pProject3.fade, #credits.fade, #back.fade {
+    visibility: visible;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#credits, #back {
+    position:sticky;
+    font-size: 13px;
+    text-align: center;
+}
+
+a:hover {
+    color:rgb(90, 90, 90);
+}
+
+#credits:hover {
+    color: white;
+}
