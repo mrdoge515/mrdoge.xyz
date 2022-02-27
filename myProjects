@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/myProjects.css"/>
+        <title>mrd0ge - MyProjects</title>
+    </head>
+    <body>
+        <p id="mainText">My recent projects</p>
+
+        <div id="projects">
+            <br>
+            <div id="project1">
+                <a href="#" rel="noreferrer noopener" target="_blank"><img src="img/spin.gif" id="pProject1"/></a>
+                <a href="#" id="aProject1" rel="noreferrer noopener" target="_blank">project1</a>
+            </div>
+            <div id="project2">
+                <a href="https://github.com/MrDoge00/BreadBot" rel="noreferrer noopener" target="_blank"><img src="img/BreadBot.jpg" id="pProject2"/></a>
+                <a href="https://github.com/MrDoge00/BreadBot" id="aProject2" rel="noreferrer noopener" target="_blank">BreadBot</a>
+            </div>
+            <div id="project3">
+                <a href="#" rel="noreferrer noopener" target="_blank"><img src="img/spin.gif" id="pProject3"/></a>
+                <a href="#" id="aProject3" rel="noreferrer noopener" target="_blank">project3</a>
+            </div>
+            <br>
+            <br>
+            <a href="index.html" id="back" rel="noreferrer noopener">Take me back!</a>
+            <br><br>
+            <a id="credits">© mrd0ge 2k22</a>
+        </div>
+        
+        <script src="js/myProjects/mainText.js"></script>
+        <script src="js/myProjects/projects.js"></script>
+    </body>
+</html>
