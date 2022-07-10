@@ -8,7 +8,7 @@ document.getElementById("credits").innerHTML = "";
 // Function to set text to links, and trigger fade animation
 setTimeout(function text() {
     if(1 > 0) {
-        document.getElementById("aProject1").innerHTML += "project1";
+        document.getElementById("aProject1").innerHTML += "SkyGraphs";
         document.getElementById("aProject2").innerHTML += "BreadBot";
         document.getElementById("aProject3").innerHTML += "project3";
 
