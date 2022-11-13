@@ -1,0 +1,14 @@
+// Import file 'style.scss'
+@use './style.scss';
+
+main {
+    // Variables defining font size
+    $linkFontSize: 5.3vw;
+    
+    a {
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: $linkFontSize;
+        color: var(--foreground-color);
+    }
+}
