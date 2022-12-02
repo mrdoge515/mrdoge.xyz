@@ -48,8 +48,8 @@ body {
 
 main {
     // Variables defining font size
-    $titleFontSize: 9.5vw;
-    $linkFontSize: 5.3vw;
+    $titleFontSize: 2.2em;
+    $linkFontSize: 1.2em;
 
     height: 100%;
     display: flex;
@@ -113,8 +113,8 @@ main {
 // Responsiveness of the website
 @media only screen and (min-width: 1000px) {
     main {
-        $titleFontSize: 6vw;
-        $linkFontSize: 2vw;
+        $titleFontSize: 7.3em;
+        $linkFontSize: 2.2em;
         span {
             font-size: $titleFontSize;
         }
@@ -123,7 +123,7 @@ main {
                 font-size: $linkFontSize;
 
                 img {
-                    height: $linkFontSize;
+                    height: $linkFontSize - 1;
                 }
             }
         }

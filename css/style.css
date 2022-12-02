@@ -47,7 +47,7 @@ main {
 }
 main span {
   font-family: "Sono", sans-serif;
-  font-size: 9.5vw;
+  font-size: 2.2em;
 }
 main .linkRow {
   display: flex;
@@ -59,7 +59,7 @@ main .linkRow {
 main .linkRow a {
   text-decoration: none;
   color: var(--foreground-color);
-  font-size: 5.3vw;
+  font-size: 1.2em;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: row;
@@ -68,7 +68,7 @@ main .linkRow a {
   padding: 0 2vw;
 }
 main .linkRow a img {
-  height: 5.3vw;
+  height: 1.2em;
   padding-right: 0.5vw;
 }
 main .linkRow a:hover {
@@ -95,13 +95,13 @@ main .linkRow a:hover {
 }
 @media only screen and (min-width: 1000px) {
   main span {
-    font-size: 6vw;
+    font-size: 7.3em;
   }
   main .linkRow a {
-    font-size: 2vw;
+    font-size: 2.2em;
   }
   main .linkRow a img {
-    height: 2vw;
+    height: 1.2em;
   }
 }
 
