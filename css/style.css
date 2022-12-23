@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #f8f8f2;
@@ -46,7 +46,7 @@ main {
   animation: fadeIn 5s;
 }
 main span {
-  font-family: "Sono", sans-serif;
+  font-family: "Fira Code", monospace;
   font-size: 2.2em;
 }
 main .linkRow {

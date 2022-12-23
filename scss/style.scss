@@ -1,6 +1,6 @@
 // Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 // Change colors depending on user defined scheme
 @media (prefers-color-scheme: light) {
@@ -61,7 +61,7 @@ main {
 
     // Main title
     span {
-        font-family: 'Sono', sans-serif;
+        font-family: 'Fira Code', monospace;
         font-size: $titleFontSize;
     }
 
