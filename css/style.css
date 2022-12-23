@@ -37,6 +37,22 @@ body {
   color: var(--foreground-color);
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 main {
   height: 100%;
   display: flex;
@@ -77,22 +93,6 @@ main .linkRow a:hover {
   border-radius: 1vw;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn2 {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
 @media only screen and (min-width: 1000px) {
   main span {
     font-size: 7.3em;

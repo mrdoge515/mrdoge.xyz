@@ -1,50 +1,5 @@
-// Import fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-
-// Change colors depending on user defined scheme
-@media (prefers-color-scheme: light) {
-    :root {
-        --background-color: #f8f8f2;
-        --foreground-color: #282a36;
-    }
-}
-@media(prefers-color-scheme: dark) {
-    :root {
-        --background-color: #282a36;
-        --foreground-color: #f8f8f2;
-    }
-
-    main {
-        img {
-            filter: brightness(0) saturate(100%) invert(86%) sepia(3%) saturate(685%) hue-rotate(54deg) brightness(121%) contrast(95%);
-        }
-    }
-}
-
-// Color scheme based on Dracula Theme
-:root {
-    --blue: #6272a4;
-    --cyan: #8be9fd;
-    --green: #50fa7b;
-    --orange: #ffb86c;
-    --pink: #ff79c6;
-    --purple: #bd93f9;
-    --red: #ff5555;
-    --yellow: #f1fa8c;
-}
-
-html, body {
-    height: 100%;
-}
-body {
-    background-color: var(--background-color);
-
-    margin: 0;
-    padding: 0;
-
-    color: var(--foreground-color);
-}
+// Use base stylesheet
+@use './base.scss';
 
 main {
     // Variables defining font size
@@ -98,16 +53,6 @@ main {
             border-radius: 1vw;
         }
     }
-}
-
-// Animations
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-@keyframes fadeIn2 {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
 }
 
 // Responsiveness of the website
