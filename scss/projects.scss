@@ -1,14 +1,90 @@
-// Import file 'style.scss'
-@use './style.scss';
+// Use base stylesheet
+@use './base.scss';
 
 main {
     // Variables defining font size
-    $linkFontSize: 5.3vw;
-    
+    $titleFontSize: 2em;
+    $aTitleSize: 1.7em;
+    font-family: 'Poppins', sans-serif;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    animation: fadeIn 5s;
+
+    // Main title
+    span {
+        font-family: 'Fira Code', monospace;
+        font-size: $titleFontSize;
+        margin-bottom: 0.5em;
+    }
+
     a {
-        text-decoration: none;
-        font-family: 'Poppins', sans-serif;
-        font-size: $linkFontSize;
         color: var(--foreground-color);
+        text-decoration: none;
+    }
+
+    #back {
+        font-size: 1.2em;
+    }
+
+    .projectLink {
+        span {
+            font-family: 'Poppins', sans-serif;
+            font-size: $aTitleSize;
+            margin-bottom: 0em;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+
+        text-align: center;
+        
+        transition: border-color ease-in 0.4s;
+
+        border: solid 0.3em;
+        border-radius: 1.5em;
+        padding: 1em 1em;
+        margin: 0.7em 0;
+    }
+    //
+    // Border color based on project title
+    //
+    #projectUjebywara {
+        border-color: var(--green);
+    }
+    #projectFreeter {
+        border-color: var(--cyan);
+    }
+    #projectUjebywara:hover, #projectFreeter:hover {
+        border-color: var(--purple);
+    }
+}
+
+// Responsiveness of the website
+@media only screen and (min-width: 1000px) {
+    main {
+        $titleFontSize: 6em;
+        $aTitleSize: 2.7em;
+        span {
+            font-size: $titleFontSize;
+            margin-bottom: 0;
+        }
+
+        .projectLink {
+            span {
+                font-size: $aTitleSize;
+            }
+            font-size: $aTitleSize - 1.5;
+            width: auto;
+        }
+        #back {
+            font-size: 2em;
+        }
     }
 }

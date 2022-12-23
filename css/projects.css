@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #f8f8f2;
@@ -37,46 +37,6 @@ body {
   color: var(--foreground-color);
 }
 
-main {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  animation: fadeIn 5s;
-}
-main span {
-  font-family: "Sono", sans-serif;
-  font-size: 9.5vw;
-}
-main .linkRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-main .linkRow a {
-  text-decoration: none;
-  color: var(--foreground-color);
-  font-size: 5.3vw;
-  font-family: "Poppins", sans-serif;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2vw;
-}
-main .linkRow a img {
-  height: 5.3vw;
-  padding-right: 0.5vw;
-}
-main .linkRow a:hover {
-  animation: fadeIn2 1.5s infinite;
-  border: solid var(--purple) 0.2vw;
-  border-radius: 1vw;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -93,22 +53,70 @@ main .linkRow a:hover {
     opacity: 0;
   }
 }
-@media only screen and (min-width: 1000px) {
-  main span {
-    font-size: 6vw;
-  }
-  main .linkRow a {
-    font-size: 2vw;
-  }
-  main .linkRow a img {
-    height: 2vw;
-  }
+main {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: fadeIn 5s;
+}
+main span {
+  font-family: "Fira Code", monospace;
+  font-size: 2em;
+  margin-bottom: 0.5em;
 }
 main a {
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 5.3vw;
   color: var(--foreground-color);
+  text-decoration: none;
+}
+main #back {
+  font-size: 1.2em;
+}
+main .projectLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  transition: border-color ease-in 0.4s;
+  border: solid 0.3em;
+  border-radius: 1.5em;
+  padding: 1em 1em;
+  margin: 0.7em 0;
+}
+main .projectLink span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.7em;
+  margin-bottom: 0em;
+}
+main #projectUjebywara {
+  border-color: var(--green);
+}
+main #projectFreeter {
+  border-color: var(--cyan);
+}
+main #projectUjebywara:hover, main #projectFreeter:hover {
+  border-color: var(--purple);
+}
+
+@media only screen and (min-width: 1000px) {
+  main span {
+    font-size: 6em;
+    margin-bottom: 0;
+  }
+  main .projectLink {
+    font-size: 1.2em;
+    width: auto;
+  }
+  main .projectLink span {
+    font-size: 2.7em;
+  }
+  main #back {
+    font-size: 2em;
+  }
 }
 
 /*# sourceMappingURL=projects.css.map */
