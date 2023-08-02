@@ -1,0 +1,21 @@
+{
+  "name": "mrdoge.xyz",
+  "version": "1.0.0",
+  "description": "mrdoge's personal website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrdoge515/mrdoge.xyz.git"
+  },
+  "keywords": [
+    "personal-website"
+  ],
+  "author": "mrdoge515",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/mrdoge515/mrdoge.xyz/issues"
+  },
+  "homepage": "https://github.com/mrdoge515/mrdoge.xyz#readme",
+  "dependencies": {
+    "scss": "^0.2.4"
+  }
+}
