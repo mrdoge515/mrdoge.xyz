@@ -1,76 +1,76 @@
 // Use base stylesheet
-@use './base.scss';
+@use "./base.scss";
 
 main {
-    // Variables defining font size
-    $titleFontSize: 2.2em;
-    $linkFontSize: 1.2em;
+  // Variables defining font size
+  $titleFontSize: 2.2em;
+  $linkFontSize: 1.2em;
 
-    height: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  animation: fadeIn 5s;
+
+  // Main title
+  span {
+    font-family: "Fira Code", monospace;
+    font-size: $titleFontSize;
+  }
+
+  // Links
+  .linkRow {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    width: 100%;
 
-    animation: fadeIn 5s;
+    a {
+      text-decoration: none;
+      color: var(--foreground-color);
+      font-size: $linkFontSize;
+      font-family: "Poppins", sans-serif;
 
-    // Main title
-    span {
-        font-family: 'Fira Code', monospace;
-        font-size: $titleFontSize;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0 2vw;
+
+      img {
+        height: $linkFontSize;
+        padding-right: 0.5vw;
+      }
     }
+    a:hover {
+      animation: fadeIn2 1.5s infinite;
 
-    // Links
-    .linkRow {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%; 
-
-        a {
-            text-decoration: none;
-            color: var(--foreground-color);
-            font-size: $linkFontSize;
-            font-family: 'Poppins', sans-serif;
-    
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-    
-            padding: 0 2vw;
-    
-            img {
-                height: $linkFontSize;
-                padding-right: 0.5vw;
-            }
-        }
-        a:hover {
-            animation: fadeIn2 1.5s infinite;
-
-            border: solid var(--purple) 0.2vw;
-            border-radius: 1vw;
-        }
+      outline: solid var(--purple) 0.2vw;
+      border-radius: 1vw;
     }
+  }
 }
 
 // Responsiveness of the website
 @media only screen and (min-width: 1000px) {
-    main {
-        $titleFontSize: 7.3em;
-        $linkFontSize: 2.2em;
-        span {
-            font-size: $titleFontSize;
-        }
-        .linkRow {
-            a{
-                font-size: $linkFontSize;
-
-                img {
-                    height: $linkFontSize - 1;
-                }
-            }
-        }
+  main {
+    $titleFontSize: 7.3em;
+    $linkFontSize: 2.2em;
+    span {
+      font-size: $titleFontSize;
     }
+    .linkRow {
+      a {
+        font-size: $linkFontSize;
+
+        img {
+          height: $linkFontSize - 1;
+        }
+      }
+    }
+  }
 }

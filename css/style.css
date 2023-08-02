@@ -18,8 +18,7 @@
     --foreground-color: #f8f8f2;
   }
   main img {
-    filter: brightness(0) saturate(100%) invert(86%) sepia(3%) saturate(685%)
-      hue-rotate(54deg) brightness(121%) contrast(95%);
+    filter: brightness(0) saturate(100%) invert(86%) sepia(3%) saturate(685%) hue-rotate(54deg) brightness(121%) contrast(95%);
   }
 }
 :root {

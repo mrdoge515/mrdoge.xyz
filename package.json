@@ -2,6 +2,9 @@
   "name": "mrdoge.xyz",
   "version": "1.0.0",
   "description": "mrdoge's personal website",
+  "scripts": {
+    "build": "sass ./scss/style.scss ./css/style.css && sass ./scss/projects.scss ./css/projects.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrdoge515/mrdoge.xyz.git"
@@ -16,6 +19,6 @@
   },
   "homepage": "https://github.com/mrdoge515/mrdoge.xyz#readme",
   "dependencies": {
-    "scss": "^0.2.4"
+    "sass": "^1.64.2"
   }
 }
