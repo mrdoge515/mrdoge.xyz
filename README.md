@@ -1,2 +1,2 @@
 # mrdoge.xyz
-mrdoge's personal website
+mrdoge's personal websited
