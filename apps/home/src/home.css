@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "FiraCode";
-  src: url("../fonts/FiraCode-Regular.woff2");
+  font-family: 'FiraCode';
+  src: url('/FiraCode-Regular.woff2');
 }
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.ttf");
+  font-family: 'Poppins';
+  src: url('/Poppins-Regular.ttf');
 }
 @media (prefers-color-scheme: light) {
   :root {
@@ -18,7 +18,8 @@
     --foreground-color: #f8f8f2;
   }
   main img {
-    filter: brightness(0) saturate(100%) invert(86%) sepia(3%) saturate(685%) hue-rotate(54deg) brightness(121%) contrast(95%);
+    filter: brightness(0) saturate(100%) invert(86%) sepia(3%) saturate(685%) hue-rotate(54deg)
+      brightness(121%) contrast(95%);
   }
 }
 :root {
@@ -69,7 +70,7 @@ main {
   animation: fadeIn 5s;
 }
 main span {
-  font-family: "Fira Code", monospace;
+  font-family: 'Fira Code', monospace;
   font-size: 2.2em;
 }
 main .linkRow {
@@ -83,7 +84,7 @@ main .linkRow a {
   text-decoration: none;
   color: var(--foreground-color);
   font-size: 1.2em;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: center;
