@@ -25,7 +25,14 @@ importers:
         version: 1.11.2
 
   apps/home:
+    dependencies:
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
     devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../packages/config-eslint
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
         version: 3.0.1(@sveltejs/kit@2.0.6)
