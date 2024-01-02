@@ -8,24 +8,33 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "drizzle-generate": "drizzle-kit generate:sqlite",
+    "drizzle-link": "pnpm link ../../drizzle-orm/dist; pnpm link ../../drizzle-zod/dist",
+    "migrate": "tsm ./src/lib/server/migrate.ts",
+    "studio": "pnpm drizzle-kit studio"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*"
+    "@libsql/client": "0.4.0-pre.5",
+    "@repo/ui": "workspace:*",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.29.3"
   },
   "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/kit": "^2.0.0",
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@types/eslint": "8.56.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "drizzle-kit": "^0.20.9",
     "eslint": "^8.56.0",
-    "@repo/eslint-config": "workspace:*",
     "eslint-plugin-svelte": "^2.35.1",
     "svelte": "^4.2.7",
     "svelte-check": "^3.6.0",
     "tslib": "^2.4.1",
+    "tsm": "^2.3.0",
     "typescript": "^5.0.0",
     "vite": "^5.0.3"
   },
